@@ -4,7 +4,7 @@
 
 A lightweight unit testing framework for Julia.
 
-## Installation
+## Usage
 
 ```
 julia> Pkg.add("Jester")
