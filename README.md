@@ -39,6 +39,10 @@ you can also describe an assert
 2 / 3 tests pass
 ```
 
+Jester returns the number of failed tests as the exit code (0 for all tests pass).
+
+Jester is Travis compatible. 
+
 ## License 
 
 MIT
