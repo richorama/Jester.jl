@@ -61,8 +61,13 @@ function test(testSubject::Function, description::ASCIIString)
 end
 
 
+exitcalled = false
 atexit() do 
-	println("$(testcounter - failedcounter) / $(testcounter) tests pass")
+	if !exitcalled
+		println("$(testcounter - failedcounter) / $(testcounter) tests pass")
+		global exitcalled = true
+		exit(failedcounter)
+	end
 end
 
 end #module

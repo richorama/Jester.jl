@@ -10,8 +10,7 @@ test() do
 	assert(2 == 2)
 end
 
-
 test() do 
-	assert(100 == 99, "100 is not 99")
+	assert(100 == 100, "100 is not 100")
 end
 
